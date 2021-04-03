@@ -1,0 +1,163 @@
+:root {
+  --fuenteUno: "Big Shoulders Display", cursive;
+  --fuenteDos: "Lexend Deca", sans-serif;
+  --sizeFontBody: 15px;
+  --sizeTitles: 2rem;
+  --orange: hsl(31, 77%, 52%);
+  --cyan: hsl(184, 100%, 22%);
+  --cyanDark: hsl(179, 100%, 13%);
+  /* paragraphs: */
+  --whiteTransparent: hsla(0, 0%, 100%, 0.75);
+  /* (background, headings, buttons):  */
+  --gray: hsl(0, 0%, 95%);
+}
+
+/* set border box properties */
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+/* ------------------------ */
+
+body {
+  background-color: var(--gray);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  color: var(--whiteTransparent);
+}
+h2{
+    font-family: var(--fuenteUno);
+    font-size: var(--sizeTitles);
+    text-transform: uppercase;
+}
+p, button{
+    font-family: var(--fuenteDos);
+    font-size: var(--sizeFontBody);
+}
+p{
+    opacity: 0.8;
+    line-height: 1.5;
+}
+
+button{
+background-color: var(--whiteTransparent);
+padding: 1rem 2rem;
+margin-top: 1.5rem;
+margin-bottom: -0.5rem;
+border: none;
+border-radius: 1.5rem;
+}
+button:hover{
+    cursor: pointer;
+}
+
+.container {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+
+  margin: 0 auto;
+  width: 85%;
+}
+.cards {
+  margin: 3rem auto;
+}
+
+.card {
+  padding: 3rem;
+}
+.card:first-of-type{
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+.card:last-of-type{
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.sedan {
+  background: var(--orange);
+}
+.sedan button{
+    color: var(--orange);
+}
+.suv {
+  background-color: var(--cyan);
+}
+
+.suv button{
+    color: var(--cyan);
+}
+.luxury {
+  background-color: var(--cyanDark);
+}
+.luxury button{
+    color: var(--cyanDark);
+}
+
+.footer {
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 992px) {
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 65%;
+    }
+    .cards{
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        min-height: 50%;
+    }
+    .card:first-of-type{
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 1rem;
+    }
+    .card:last-of-type{
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 1rem;
+    }
+    .card {
+        padding: 3rem 4rem;
+    }
+    button{
+        transition: all 0.3s ease-in-out;
+    }
+    button:hover{
+        border: 2px solid var(--whiteTransparent);
+        color: var(--whiteTransparent);
+    }
+    .sedan button:hover{
+        background: var(--orange);
+    }
+    .suv button:hover{
+        background: var(--cyan);
+    }
+    .luxury button:hover{
+        background: var(--cyanDark);
+    }
+    /* .footer{
+        display: grid;
+        align-items: end;
+    } */
+}
+
+/* Styles for footer */
+.attribution {
+color: rgba(0, 0, 0, 0.7);
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
