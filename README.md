@@ -25,10 +25,10 @@ Users should be able to:
 
 ### Screenshot
 #### MOBILE LAYOUT:
-![](./screenshots/MOBILE.png)
+![](./screenshots/mobile.png)
 
 #### DESKTOP LAYOUT:
-![](./screenshots/DESKTOP.png)
+![](./screenshots/desktop.png)
 
 ### Links
 
