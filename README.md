@@ -53,6 +53,6 @@ Flexbox and grid and their behaviour.
 
 ## Author
 
-- Website - [Gabo GitHub](https://github.com/gabopereyra)
+- Website - [Gabo](https://github.com/gabopereyra)
 - Frontend Mentor - [@gabopereyra](https://www.frontendmentor.io/profile/gabopereyra)
 - Twitter - [@gabs_pereyra](https://twitter.com/gabs_pereyra)
